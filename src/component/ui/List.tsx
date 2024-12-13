@@ -12,7 +12,11 @@ export default function List({ q }: { q: string }) {
   const mapPart = useCallback(
     (item: string, index: number) => (
       <span key={`${item}-${index}`}>
-        {item.toLowerCase() === q.toLowerCase() ? <mark>{item}</mark> : item}
+        {item.toLowerCase() === q.toLowerCase() ? (
+          <mark className="text-bg-primary">{item}</mark>
+        ) : (
+          item
+        )}
       </span>
     ),
     [q]
