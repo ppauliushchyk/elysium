@@ -2,7 +2,7 @@
 
 ## Description
 
-See a list of countries filtered by code using a GraphQL query.
+Locate a university using the autocomplete feature.
 
 ## Installation
 
